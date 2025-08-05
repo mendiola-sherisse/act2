@@ -1,0 +1,1209 @@
+     * {
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #f6ebd3; 
+    border-bottom: 3px solid #c2a875;
+    font-size: 13px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; 
+    width: 100%; 
+    z-index: 100; 
+    }
+
+
+    .nav-left,
+    .nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    }
+
+    .nav-link {
+    padding: 4px 8px;
+    margin: 0 auto;
+    color: #6b3e2e;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    }
+    .nav-link:hover {
+    color: #b76e22;
+    box-shadow: 0 0 6px rgba(84, 49, 23, 0.65);
+    }
+    .nav-link.active {
+    color: #b76e22;
+    box-shadow: 0 0 6px rgba(84, 49, 23, 0.65);
+    }
+
+    .nav-button {
+    background-color: #b76e22;
+    border: none;
+    padding: 9px 18px;
+    color: #fffef5;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    }
+    .nav-button:hover {
+    background-color: #8b4513;
+    }
+
+    .logo-text {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #6b3e2e;
+    }
+
+    body.index #oldgeneration-nav {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      position: relative;
+    }
+
+    body.index #oldgeneration-nav::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+  
+    body.index {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #4a2e1e;
+      min-height: 100vh;
+    }
+
+    body.index::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.index .main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 80px 20px;
+        max-width: 900px;
+        margin: 60px auto 60px auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        color: #6b3e2e;
+        background-color: rgba(246, 235, 211, 0.85);
+    }
+
+    body.index .medium-header {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    body.index .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    body.index .description {
+      font-size: 18px;
+      max-width: 800px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    body.index .main-button {
+      display: inline-block;
+      background-color: #b87333;
+      color: #fffaf0;
+      padding: 16px 40px;
+      border: none;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    body.index .main-button:hover {
+      background-color: #8b5c2a;
+      text-decoration: none;
+    }
+    
+    * {
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body.login#oldgeneration-nav {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      position: relative;
+    }
+
+    body.login#oldgeneration-nav::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.login {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #4a2e1e; 
+      text-align: center;
+    }
+
+    body.login::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.login.nav-button:hover {
+      background-color: #8b4513;
+      text-decoration: none;
+    }
+
+    body.login .logo-text {
+      font-weight: bolder;
+      font-size: 20px;
+      color: #6b3e2e;
+    }
+
+    body.login.nav-link i {
+      margin-right: 6px;
+    }
+
+    body.login .login-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 100px auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      overflow: hidden;
+    }
+
+    body.login .login-left {
+      flex: 1;
+      padding: 50px;
+      text-align: left;
+      color: #4a2e1e;
+    }
+
+    body.login .login-left h1 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #3c2415;
+      text-shadow: 1px 1px 2px #f8f1e1;
+    }
+
+    body.login .login-left p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #4a2e1e;
+    }
+
+    body.login .subheading {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      color: #6b3e2e;
+      margin-top: 20px;
+    }
+
+    body.login .subheading i {
+      margin-right: 8px;
+      color: #b76e22;
+    }
+
+    body.login .login-right {
+      flex: 1;
+      background: #f6ebd3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    body.login .card {
+      background: white;
+      padding: 100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      width: auto 100%;
+    }
+
+    body.login .card h2 {
+      margin-bottom: 20px;
+      color: #4a2e1e;
+    }
+
+    body.login .btn-facebook {
+      width: 100%;
+      background-color: #b76e22;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 25px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    body.login .btn-facebook:hover {
+      background-color: #8b4513;
+    }
+
+    body.login .btn-facebook i {
+      margin-left: 8px;
+    }
+
+    body.login .btn-email {
+      width: 100%;
+      background: #f5f5f5;
+      padding: 14px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #4a2e1e;
+      cursor: pointer;
+    }
+
+    body.login .divider {
+      margin: 20px 0;
+      font-size: 14px;
+      color: #888;
+    }
+
+    body.login .learn-more {
+      color: #b76e22;
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    body.content#oldgeneration-nav {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      position: relative;
+    }
+    
+    body.content#oldgeneration-nav::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.content {
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: #4a2e1e;
+      min-height: 100vh;
+    }
+
+    body.content .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+    }
+
+    body.content .container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px;
+      max-width: 1400px;
+      gap: 80px;
+      background-color: rgba(246, 235, 211, 0.85);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      border: 2px solid #c2a875;
+      margin-top: 20px;
+    }
+
+    body.content .left-section,
+    body.content .right-section {
+      flex: 1;
+      max-width: 600px;
+    }
+
+    body.content .left-section {
+      text-align: center;
+    }
+
+    body.content .left-section h2 {
+      font-size: 32px;
+      margin-bottom: 16px;
+      color: #6b3e2e;
+    }
+
+    body.content .left-section p {
+      font-size: 18px;
+      color: #6b3e2e;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    body.content .image-placeholder {
+      width: 320px;
+      height: 220px;
+      background: #f8f1e1;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 2px solid #c2a875;
+      background-image: url('https://transportationhistory.org/wp-content/uploads/2022/03/philippine_air_lines_510675508.jpg?w=1400');
+      background-size: cover;
+      background-position: center;
+    }
+
+    body.content .image-placeholder::before {
+      content: "";
+      font-size: 48px;
+      color: #b87333;
+    }
+
+    body.content .button {
+      display: inline-block;
+      background-color: #b87333;
+      color: #fffaf0;
+      padding: 16px 40px;
+      border: none;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      margin-bottom: 24px;
+      box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    body.content .button:hover {
+      background-color: #8b5c2a;
+    }
+
+    body.content .right-section h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #6b3e2e;
+      border-bottom: 2px solid #c2a875;
+      padding-bottom: 8px;
+    }
+
+    body.content .right-section h3 i {
+      margin-right: 10px;
+      color: #b87333;
+    }
+
+    body.content .right-section p {
+      font-size: 17px;
+      color: #6b3e2e;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    body.content .right-section p i {
+      margin-right: 8px;
+      color: #b87333;
+    }
+
+
+    body.contact#oldgeneration {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #4a2e1e;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    body.contact#oldgeneration::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.contact .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      margin-top: 20px;
+    }
+
+    body.contact .title {
+      font-size: 42px;
+      font-weight: bold;
+      color: #fffaf3;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px #3c2415;
+      margin-bottom: 10px;
+    }
+
+    body.contact .medium-header {
+      font-size: 28px;
+      font-weight: normal;
+      margin-bottom: 25px;
+      color: #f8f1e1;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px #3c2415;
+    }
+
+    body.contact .description {
+      margin: 0 auto 40px;
+      max-width: 600px;
+      font-size: 17px;
+      color: #f8f1e1;
+      line-height: 1.7;
+      font-style: italic;
+      text-shadow: 1px 1px 2px #3c2415;
+    }
+
+    body.contact .logo-text {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #6b3e2e;
+    padding-bottom:10px;
+    }
+
+    body.contact .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 0 auto 60px; 
+    padding: 40px 60px; 
+    background-color: rgba(246, 235, 211, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(60, 36, 21, 0.3);
+    border: 1px solid #c2a875;
+    gap: 40px; 
+    }
+
+
+    body.contact .contact-left, body.contact .contact-right {
+      flex: 1;
+      min-width: 0;
+    }
+
+    body.contact .contact-left h2, body.contact.contact-right h2 {
+      font-size: 28px;
+      color: #6b3e2e;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #c2a875;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    body.contact .vintage-image {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 5px solid #f6ebd3;
+      box-shadow: 5px 5px 15px rgba(0,0,0,0.15);
+      margin: 0 auto 30px;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    body.contact.vintage-image:hover {
+      transform: scale(1.03);
+    }
+
+    body.contact .contact-info {
+      font-size: 16px;
+      color: #6b3e2e;
+      line-height: 1.8;
+      text-align: left;
+      padding: 0 15px;
+    }
+
+    body.contact .contact-info strong {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    body.contact .contact-info a {
+      color: #b76e22;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    body.contact .contact-info a:hover {
+      color: #8b4513;
+      text-decoration: underline;
+    }
+
+    body.contact .contact-info i {
+      width: 20px;
+      text-align: center;
+      margin-right: 8px;
+    }
+
+    body.contact .form-group {
+      margin-bottom: 25px;
+      width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body.contact .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #6b3e2e;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    body.contact .form-group input,
+    body.contact .form-group select,
+    body.contact .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid #c2a875;
+      border-radius: 6px;
+      background-color: #fffaf0;
+      font-family: 'Georgia', serif;
+      color: #6b3e2e;
+      transition: all 0.3s ease;
+    }
+
+    body.contact .form-group input:focus,
+    body.contact .form-group select:focus,
+    body.contact .form-group textarea:focus {
+      border-color: #b76e22;
+      box-shadow: 0 0 5px rgba(183, 110, 34, 0.3);
+      outline: none;
+    }
+
+    body.contact .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    body.contact .submit-btn {
+      background-color: #b87333;
+      color: #fffaf0;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    body.contact .submit-btn:hover {
+      background-color: #8b5c2a;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 992px) {
+      body.contact .form-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+      }
+      
+      body.contact .title {
+        font-size: 36px;
+      }
+      
+      body.contact .medium-header {
+        font-size: 24px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body.contact .navbar {
+        padding: 8px 15px;
+      }
+      
+      body.contact .nav-left, body.contact .nav-right {
+        gap: 12px;
+      }
+      
+      body.contact .logo img {
+        height: 32px;
+      }
+      
+      body.contact .logo-text {
+        font-size: 16px;
+      }
+      
+      body.contact .nav-link {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+      
+      body.contact .nav-button {
+        padding: 6px 15px;
+        font-size: 12px;
+      }
+      
+      body.contact .main-content {
+        padding: 30px 15px;
+      }
+      
+      body.contact .form-container {
+        padding: 25px 20px;
+        margin-bottom: 40px;
+      }
+      
+      body.contact .vintage-image {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      body.contact .title {
+        font-size: 30px;
+      }
+      
+      body.contact .medium-header {
+        font-size: 20px;
+      }
+      
+      body.contact .description {
+        font-size: 15px;
+      }
+      
+      body.contact .contact-left h2, 
+      body.contact .contact-right h2 {
+        font-size: 24px;
+      }
+      
+      body.contact .vintage-image {
+        width: 160px;
+        height: 160px;
+      }
+      
+      body.contact .logo-text {
+        display: none;
+      }
+    }
+
+    body.app#oldgeneration-nav {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #4a2e1e;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    body.app#oldgeneration-nav::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.app#oldgeneration-nav {
+      position: relative;
+    }
+
+    body.app .app-tab {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 50px;
+      background: rgba(246, 235, 211, 0.945);
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      border: 2px solid #c2a875;
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    body.app .app-left {
+      flex: 1;
+      color: #4a2e1e;
+    }
+
+    body.app .app-left h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #6b3e2e;
+    }
+
+    body.app .app-left p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    body.app .download-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    body.app .download-btn {
+      display: flex;
+      align-items: center;
+      background-color: #b76e22;
+      color: #fffef5;
+      padding: 14px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    body.app .download-btn i {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    body.app .download-btn:hover {
+      background-color: #8b4513;
+    }
+
+    body.app .app-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body.app .device-mockup img {
+      max-width: 300px;
+      filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.3));
+    }
+
+
+    @media (max-width: 900px) {
+      body.app {
+        padding-top: 120px; 
+      }
+      body.app .navbar {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        font-size: 14px;
+        justify-content: center;
+      }
+      body.app .nav-left, body.app .nav-right {
+        padding: 5px 0;
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+      }
+      body.app .app-tab {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+      }
+      body.app .download-buttons {
+        justify-content: center;
+      }
+    }
+    * {
+      box-sizing: border-box;
+      font-family: 'Georgia', serif;
+    }
+
+    body.price {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      background-image: url('https://www.philippineairlines.com/content/dam/palportal/migration/files/historyandmilestonespalsstory/1970s/images-for-web-1970s-bac.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #4a2e1e; 
+      text-align: center;
+    }
+
+    body.price::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(84, 49, 23, 0.65);
+      z-index: -1;
+    }
+
+    body.price .nav-center {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    body.price .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    body.price .logo-text {
+        font-weight: bolder;
+        font-size: 20px;
+        color: #6b3e2e;
+    }
+
+    body.price .nav-link {
+        padding: 4px 8px;
+        color: #6b3e2e;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        transition: all 0.3s ease;
+    }
+    body.price .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 30px;
+      background-color: #f6ebd3;
+      border-bottom: 3px solid #c2a875;
+      font-size: 13px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    body.price .nav-left, body.price .nav-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    body.price .nav-link {
+      padding: 4px 8px;
+      margin: 0 auto;
+      color: #6b3e2e;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      transition: all 0.3s ease;
+    }
+
+    body.price .nav-link:hover {
+      color: #b76e22;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(84, 49, 23, 0.65);
+    }
+
+    body.price .nav-link.active {
+      color: #b76e22;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(84, 49, 23, 0.65);
+    }
+
+    body.price .nav-button {
+      background-color: #b76e22;
+      border: none;
+      padding: 9px 18px;
+      color: #fffef5;
+      border-radius: 25px;
+      font-weight: bold;
+      font-family: 'Georgia', serif;
+      box-shadow: 2px 3px 6px rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+
+    body.price .nav-button:hover {
+      background-color: #8b4513;
+    }
+
+    body.price .logo-text {
+      font-weight: bolder;
+      font-size: 20px;
+      color: #6b3e2e;
+    }
+
+    body.price .logo-text{
+      margin-right: 6px;
+    }
+
+    body.price .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    body.price .page-title {
+      font-size: 36px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #3c2415;
+    }
+
+    body.price .page-subtitle {
+      font-size: 18px;
+      max-width: 800px;
+      line-height: 1.6;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    body.price .pricing-table {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    body.price .plan {
+      flex: 1;
+      min-width: 300px;
+      background: #fff;
+      border: 2px dashed transparent;
+      border-radius: 12px;
+      padding: 40px 30px;
+      min-height: 600px;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;   
+      
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(60,36,21,0.1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    body.price .plan::before {
+      content: "BOARDING PASS";
+      position: absolute;
+      top: 10px;
+      left: -40px;
+      transform: rotate(-45deg);
+      background: #b76e22;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 5px 60px;
+      opacity: 0.8;
+    }
+
+    body.price .plan:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(60,36,21,0.15);
+      border: 5px solid #b76e22;
+    }
+
+    body.price .plan h2 {
+      color: #6b3e2e;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    body.price .plan ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+    }
+
+    body.price .plan ul li {
+      margin: 15px 0;
+      color: #5a3a25;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    body.price .plan ul li i {
+      color: #b76e22;
+      margin-right: 10px;
+    }
+
+    body.price .price {
+      font-size: 28px;
+      color: #8b4513;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    body.price .description {
+      font-size: 14px;
+      color: #5a3a25;
+      margin-bottom: 25px;
+      font-style: italic;
+    }
+
+    body.price .btn {
+      background: #b87333;
+      color: #fffaf0;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-size: 15px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 100%;
+      max-width: 200px;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.9);
+    }
+
+    body.price .plan:hover .btn {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    body.price .btn:hover {
+      background: #8b5c2a;
+      transform: translateY(-2px) scale(1.02);
+    }
+    #topBtn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #b76e22;
+      color: white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 20px;
+      box-shadow: 0 8px 15px rgba(183, 110, 34, 0.5);
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.3s ease;
+      z-index: 999;
+    }
+
+    #topBtn:hover {
+      background-color: #8b4513;
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 15px 25px rgba(139, 69, 19, 0.7);
+    }
